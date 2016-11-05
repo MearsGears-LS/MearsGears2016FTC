@@ -15,7 +15,7 @@ import org.firstinspires.ftc.robotcontroller.external.samples.HardwarePushbot;
 /**
  This is lawton's TeleOp program :) mrs M test
  */
-
+//hi
 @TeleOp(name="LawtonDriveMode")
 
 public class Lawton extends OpMode {
@@ -40,7 +40,8 @@ public class Lawton extends OpMode {
 
         leftarm = hardwareMap.servo.get("leftservo");
         rightarm = hardwareMap.servo.get("rightservo");
-        leftarm = hardwareMap.servo.get("arm");
+        rightarm.setDirection(Servo.Direction.REVERSE);
+
     }
 
     @Override()
@@ -55,7 +56,13 @@ public class Lawton extends OpMode {
             leftwheelpower = gamepad1.left_stick_y;
             rightwheelpower = gamepad1.right_stick_y;
         }
-
+        if(gamepad1.left_trigger>0){
+            leftarm.setPosition(100);
+            rightarm.setPosition(100);
+        }else {
+            leftarm.setPosition(0);
+            rightarm.setPosition(0);
+        }
 
     }
 }

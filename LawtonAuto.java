@@ -28,7 +28,7 @@ public class LawtonAuto extends LinearOpMode{                   //type of progra
         left.setDirection(DcMotor.Direction.REVERSE);           //sets one of the motors reverse becaues the motors face opposite directions
 
 
-
+//
         waitForStart();                                         //waits for start button to be pressed
         sleep(0);                                            //sleep: time of wait in millaseconds
         forward(1);                                             //forward: referring to code below

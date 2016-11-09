@@ -12,9 +12,9 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
  This is lawton's TeleOp program :)
  */
 
-@Autonomous(name="LawtonAuto")                                  //Title of your program
+@Autonomous(name="AutoMode")                                  //Title of your program
 
-public class LawtonAuto extends LinearOpMode{                   //type of program, Lawton auto is name of program
+public class AutoMode extends LinearOpMode{                   //type of program, Lawton auto is name of program
 
     DcMotor left;                                               //give motors a name
     DcMotor right;
@@ -32,37 +32,42 @@ public class LawtonAuto extends LinearOpMode{                   //type of progra
         waitForStart();                                         //waits for start button to be pressed
         sleep(0);                                            //sleep: time of wait in millaseconds
         forward(1);                                             //forward: referring to code below
-        sleep(3000);
-        forward(1);
-        sleep(2000);
-        back(0.5);
-        sleep(1000);
+        sleep(4000);
+        back(1);
+        sleep(800);
         right(1);
         sleep(700);
         forward(1);
-        sleep(3000);
-        forward(0.5);
-        sleep(2000);
+        sleep(4000);
         back(1);
         sleep(1000);
         right(1);
         sleep(700);
         forward(1);
-        sleep(3000);
-        forward(1);
-        sleep(2000);
+        sleep(4000);
         back(0.5);
         sleep(1000);
         right(1);
         sleep(700);
+        forward(1);                                             //forward: referring to code below
+        sleep(4000);
+        back(1);
+        sleep(800);
+        right(1);
+        sleep(700);
         forward(1);
-        sleep(3000);
-        forward(0.5);
-        sleep(2000);
+        sleep(4000);
         back(1);
         sleep(1000);
         right(1);
         sleep(700);
+        forward(1);
+        sleep(4000);
+        back(0.5);
+        sleep(1000);
+        right(1);
+        sleep(700);
+
         stop();
 
 
